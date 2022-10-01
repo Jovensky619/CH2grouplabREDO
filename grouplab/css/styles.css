@@ -1,0 +1,17 @@
+/* students: Gregory smith, Daniel Daza, Jovensky Saint-Hilaire
+file:styles.css
+date: 9/30/2022
+*/
+
+/* css reset */
+body, header, nav, main, footer, img, h1 {
+margin: 0;
+padding: 0;
+border: 0;
+
+}
+
+style{
+  max-width: 100%;
+  display: block;
+}
