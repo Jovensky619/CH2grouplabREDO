@@ -57,6 +57,7 @@ date: 9/30/2022
     background-color: #f1e958;
     overflow: auto;
     font-family: Verdana, Arial, sans-serif;
+    font-style: italic;
     
     }
     
@@ -70,7 +71,7 @@ date: 9/30/2022
     color: #373684;
     font-weight: bold;
     }
-    #piano, #guitar, #violin {
+    #3pt, #basketball, #computerclub {
         width: 29%;
         float: left;
         margin: 0 2%;
