@@ -14,7 +14,10 @@ border: 0;
 img {
 max-width: 100%;
 display: block;
+}
 
+.round{
+  border-radius: 6px;
 }
 /* styles rule for mobile view */
 
@@ -36,11 +39,11 @@ header h1 {
     }
 
 /* style rule for navigation area */
-Nav{
+nav{
     background-color: rgb(0, 0, 0);
     }
 
-Nav ul{
+nav ul{
   list-style-type: none;
   margin: 0;
   text-align: center;
@@ -61,13 +64,15 @@ nav li a {
 /* styles rules for main content */
 main{
   padding: 2%;
-background-color: #f1e958;
-overflow: auto;
-font-family: Verdana, Arial, sans-serif;
-    font-style: italic;
+  background-color: #f1e958;
+  overflow: auto;
+  font-family: 'Nanum Gothic Coding', monospace;
+  
 }
 
-.bolded { font-weight: bold; }
+.bolded { 
+  font-weight: bold;
+ }
 
 main p{
   font-size: 1.25em;
@@ -75,41 +80,46 @@ main p{
 
 .action {
     font-size: 1.75em;
-    color: #373684;
+    color: #f1e958;
     font-weight: bold;
     }
 
-    #3pt, #basketball, #computerclub {
-           width: 29%;
-           float: left;
-           margin: 0 2%;
-           }
-   #info {
+#basketball, #computerclub, #home, #home, #tips, #dunk, #pt{
+    width: 29%;
+    float: left;
+    margin: 0 2%;
+    }
+
+#info {
+  clear: left;
+  background-color: none;
+  padding: 1% 2%;
+    }
+
+#contact {
+  text-align: center;
+     }
+    #contact a {
+      color: #4645a8;
+      text-decoration: none;
+      font-weight: bold;
+      }
+              
+
+
+/* Style rules for footer content */
+    footer {
+      text-align: center;
+      font-size: 0.85em;
       clear: left;
-      background-color: none;
-      padding: 1% 2%;
-        }
-
-        #contact {
-              text-align: center;
-              }
-              #contact a {
-              color: #4645a8;
-              text-decoration: none;
-              font-weight: bold;
-              }
-              .map {
-              border: 5px solid #373684;
-              }
-
-
-              /* Style rules for footer content */
-                  footer {
-                  text-align: center;
-                  font-size: 0.65em;
-                  clear: left;
-                  }
-                  footer a {
-                  color: #4645a8;
-                  text-decoration: none;
-                  }   
+      background-color: black;
+      color:#f1e958;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      padding-left:0%;
+      padding-right: 0%;
+      }
+    footer a {
+      color: #f1e958;
+      text-decoration: none;
+      }    
