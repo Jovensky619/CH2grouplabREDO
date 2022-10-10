@@ -80,11 +80,11 @@ main p{
 
 .action {
     font-size: 1.75em;
-    color: #373684;
+    color: #f1e958;
     font-weight: bold;
     }
 
-#basketball, #computerclub, #home, #mtgclub, #soccerclub, #home{
+#basketball, #computerclub, #home, #home, #tips, #dunk, #pt{
     width: 29%;
     float: left;
     margin: 0 2%;
