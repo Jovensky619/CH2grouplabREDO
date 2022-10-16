@@ -23,6 +23,7 @@ display: block;
 
 
 /* hide tab-desk */
+Hide tab-desk class 
 .tab-desk{
   display: none;
 }
@@ -60,6 +61,10 @@ nav li a {
   padding: 0.5em 1em;
   text-decoration: none;
 }
+nav li a:hover{
+  color:black;
+  background:yellow;
+}
 
 /* styles rules for main content */
 main{
@@ -84,6 +89,7 @@ main p{
     font-weight: bold;
     }
 
+  
 #basketball, #computerclub, #home, #home, #tips, #dunk, #pt{
     width: 29%;
     float: left;
@@ -122,4 +128,41 @@ main p{
     footer a {
       color: #f1e958;
       text-decoration: none;
-      }    
+      }
+      
+  /* Media Query for Desktop Viewport */
+@media screen and (min-width: 900px), print {
+
+  /*Style rule for header*/
+  header{
+      width:95%;
+     
+  }
+  nav li{
+    border-top: 1px solid #e5e9fc;
+    display: block;
+    font-size: 2em;
+  }
+  nav li a {
+    display: block;
+    color: #ffff00;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+  }
+  nav li a:hover{
+    color:black;
+    background:yellow;
+  }
+  .basketball{
+      width:30%;
+      float:left;
+      padding-top:1.5%;
+      padding-bottom:1.5%;
+      padding-left:1.5%;
+      padding-right:1.5%;
+  }
+ .gradient{
+  background: linear-gradient(to right,yellow, black );
+ }
+}
