@@ -166,3 +166,19 @@ main p{
   background: linear-gradient(to right,yellow, black );
  }
 }
+/* Media Query for Large Desktop Viewports*/
+@media only screen and (min-width: 600px){
+  body{
+    background-image:linear-gradient(yellow, black);
+  }  
+  #gradient{
+    max-width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  main{
+    background-color: #e6e352;
+  }
+}
