@@ -4,7 +4,7 @@ date: 9/30/2022
 */
 
 /* CSS reset */
-body, header, nav, main, footer, img, h1, ul {
+body, header, nav, main, footer, img, h1, ul, article, section {
 margin: 0;
 padding: 0;
 border: 0;
@@ -23,7 +23,7 @@ display: block;
 
 
 /* hide tab-desk */
-Hide tab-desk class 
+Hide tab-desk class
 .tab-desk{
   display: none;
 }
@@ -72,10 +72,10 @@ main{
   background-color: #f1e958;
   overflow: auto;
   font-family: 'Nanum Gothic Coding', monospace;
-  
+
 }
 
-.bolded { 
+.bolded {
   font-weight: bold;
  }
 
@@ -89,7 +89,7 @@ main p{
     font-weight: bold;
     }
 
-  
+
 #basketball, #computerclub, #home, #home, #tips, #dunk, #pt{
     width: 29%;
     float: left;
@@ -110,7 +110,7 @@ main p{
       text-decoration: none;
       font-weight: bold;
       }
-              
+
 
 
 /* Style rules for footer content */
@@ -129,14 +129,14 @@ main p{
       color: #f1e958;
       text-decoration: none;
       }
-      
+
   /* Media Query for Desktop Viewport */
 @media screen and (min-width: 900px), print {
 
   /*Style rule for header*/
   header{
       width:95%;
-     
+
   }
   nav li{
     border-top: 1px solid #e5e9fc;
@@ -170,7 +170,7 @@ main p{
 @media only screen and (min-width: 600px){
   body{
     background-image:linear-gradient(yellow, black);
-  }  
+  }
   #gradient{
     max-width: 80%;
     margin-top: 0;
