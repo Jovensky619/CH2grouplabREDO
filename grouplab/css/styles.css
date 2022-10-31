@@ -4,7 +4,7 @@ date: 9/30/2022
 */
 
 /* CSS reset */
-body, header, nav, main, footer, img, h1, ul, article, section {
+body, header, nav, main, footer, img, h1, ul, article, section, figure {
 margin: 0;
 padding: 0;
 border: 0;
