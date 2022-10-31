@@ -12,7 +12,9 @@ border: 0;
 }
 
 article{
-  font-style: italic;
+
+  text-shadow: 4px 4px 10px #000000;
+
 }
 
 figure{
@@ -20,6 +22,9 @@ figure{
   max-width: 275px;
   margin: 2% auto;
   border: 8px solid #373684;
+  background: rgba(246,190,0, 0.5)
+
+
 }
 
 /* grid rules */
