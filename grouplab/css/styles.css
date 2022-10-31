@@ -10,6 +10,24 @@ padding: 0;
 border: 0;
 
 }
+
+article{
+  font-style: italic;
+}
+
+figure{
+  position: relative;
+  max-width: 275px;
+  margin: 2% auto;
+  border: 8px solid #373684;
+}
+
+/* grid rules */
+.grid{
+  grid-template-columns:2;
+  grid-column: 1 / span 2;
+}
+
 /* style rules for images */
 img {
 max-width: 100%;
