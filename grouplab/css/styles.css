@@ -4,12 +4,35 @@ date: 9/30/2022
 */
 
 /* CSS reset */
-body, header, nav, main, footer, img, h1, ul {
+body, header, nav, main, footer, img, h1, ul, article, section, figure {
 margin: 0;
 padding: 0;
 border: 0;
 
 }
+
+article{
+
+  text-shadow: 4px 4px 10px #000000;
+
+}
+
+figure{
+  position: relative;
+  max-width: 275px;
+  margin: 2% auto;
+  border: 8px solid #373684;
+  background: rgba(246,190,0, 0.5)
+
+
+}
+
+/* grid rules */
+.grid{
+  grid-template-columns:2;
+  grid-column: 1 / span 2;
+}
+
 /* style rules for images */
 img {
 max-width: 100%;
@@ -23,7 +46,7 @@ display: block;
 
 
 /* hide tab-desk */
-Hide tab-desk class 
+Hide tab-desk class
 .tab-desk{
   display: none;
 }
@@ -72,10 +95,10 @@ main{
   background-color: #f1e958;
   overflow: auto;
   font-family: 'Nanum Gothic Coding', monospace;
-  
+
 }
 
-.bolded { 
+.bolded {
   font-weight: bold;
  }
 
@@ -89,7 +112,7 @@ main p{
     font-weight: bold;
     }
 
-  
+
 #basketball, #computerclub, #home, #home, #tips, #dunk, #pt{
     width: 29%;
     float: left;
@@ -110,7 +133,7 @@ main p{
       text-decoration: none;
       font-weight: bold;
       }
-              
+
 
 
 /* Style rules for footer content */
@@ -129,14 +152,14 @@ main p{
       color: #f1e958;
       text-decoration: none;
       }
-      
+
   /* Media Query for Desktop Viewport */
 @media screen and (min-width: 900px), print {
 
   /*Style rule for header*/
   header{
       width:95%;
-     
+
   }
   nav li{
     border-top: 1px solid #e5e9fc;
@@ -170,7 +193,7 @@ main p{
 @media only screen and (min-width: 600px){
   body{
     background-image:linear-gradient(yellow, black);
-  }  
+  }
   #gradient{
     max-width: 80%;
     margin-top: 0;
@@ -181,4 +204,171 @@ main p{
   main{
     background-color: #e6e352;
   }
+}
+
+/* style rules for table */
+table {
+   border: 1px solid #000000;
+   border-collapse: collapse;
+   margin: 0 auto;
+   width: 100%;
+      }
+
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1%;
+}
+
+  th, td {
+    border: 1px solid #000000;
+     padding: 2%;
+   }
+
+     th  {
+        background-color: #000000;
+         color: #fff;
+         font-size: 1.15em;
+         }
+
+  tr:nth-child(odd){
+    background-color: 	#ffffff;
+  }
+
+
+/* media query for tablet viewport */
+@media screen and (min-width: 550px), print{
+  /* tablet viewport: show tab-desk, hide mobile class */
+.mobile{
+  display: none;
+   }
+   /* tablet viewport: style ruel for header content */
+   span.tab-desk{
+     display: inline;
+   }
+   /* tablet viewport: style rules for nav area */
+   .nav li{
+     border-top: none;
+     display: inline-block;
+     font-size: 1.5em;
+     border-right: 1px solid #e5e9fc;
+   }
+  .nav li p:last-child{
+     border-right: none;
+
+ }
+  .nav li{
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+      }
+
+/* tablet viewport: style rule for map */
+.map{
+width: 500px;
+height: 450px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 2;
+  grid-gap: 20px;
+}
+
+aside{
+  grid-column: 1 /span 2;
+
+}
+
+/* tablet view port: style rules for form elements  */
+.form{
+  width: 70%;
+  margin-top: zero;
+  margin-bottom: zero;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
+/* media queryfor desktop viewport */
+@media screen and (min-width: 769px), print;{
+
+
+
+/* desktop viewport: style rule for header */
+.header{
+  padding: 2%;
+}
+
+/* desktop viewport: style rules for nav area */
+.nav li a{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+
+}
+a:hover{
+color: #373684;
+background-color: #e5e9fc;
+
+}
+
+/* desktop viewport: style rules for main content */
+#info ul{
+  margin-left: 5%;
+
+}
+.h3{
+  font-size: 1.5em;
+}
+#club, #Days, #time{
+  width: 29%;
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.grid{
+  grid-template-columns: 4;
+
+}
+
+figcaption{
+  font-size: 1em;
+}
+
+aside{
+  grid-column:  1 /span 4;
+}
+
+}
+
+/* media query for print */
+
+@media print{
+  .body{
+    background-color: #fff;
+    color: #000;
+  }
+
+
+  /* desktop Viewport: style rules for table */
+.table{
+  width: 70%;
+}
+
+.form-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+.btn{
+  grid-column: 1 /span 2;
+}
+
 }
